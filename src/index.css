@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217 91.2% 59.8%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-neo-blue/20 selection:text-neo-white;
+  }
+  
+  body {
+    @apply bg-neo-dark text-neo-white antialiased overflow-x-hidden font-montserrat;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .neo-glass {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 shadow-lg;
+  }
+  
+  .neo-card {
+    @apply neo-glass shadow-neo transition-all duration-300 hover:shadow-neo-strong hover:-translate-y-1;
+  }
+  
+  .neo-card-purple {
+    @apply neo-glass shadow-neo-purple transition-all duration-300 hover:shadow-neo-strong hover:-translate-y-1;
+  }
+  
+  .neo-button {
+    @apply transition-all duration-300 bg-opacity-10 hover:bg-opacity-20 shadow-neo hover:shadow-neo-strong;
+  }
+  
+  .neo-border {
+    @apply border border-neo-blue/30;
+  }
+  
+  .neo-border-purple {
+    @apply border border-neo-purple/30;
+  }
+  
+  .neo-focus {
+    @apply focus:outline-none focus:ring-2 focus:ring-neo-blue/50 focus:ring-offset-2 focus:ring-offset-neo-dark;
+  }
+  
+  .neo-grid-bg {
+    @apply bg-neo-grid bg-[length:30px_30px];
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  }
+  
+  .text-glow-purple {
+    text-shadow: 0 0 10px rgba(123, 104, 238, 0.5);
+  }
+}
