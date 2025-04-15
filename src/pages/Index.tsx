@@ -159,6 +159,7 @@ const Index = () => {
       </motion.div>
       
       {/* Domains Section */}
+      {/* 
       <section id="domains" className="py-20 relative">
         <div className="container px-4 mx-auto">
           <motion.div 
@@ -294,6 +295,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      */}
       
       {/* Services Section - Enhanced for Hosting */}
       <section id="services" className="py-20">
@@ -336,6 +338,42 @@ const Index = () => {
                     'One-Click Installers'
                   ],
                   type: 'blue'
+                },
+                {
+                  name: 'Cloud Hosting',
+                  icon: Cloud,
+                  features: [
+                    'Auto-Scaling Resources',
+                    'Load Balancing',
+                    'Dedicated Resources',
+                    'Enhanced Security',
+                    'High Availability'
+                  ],
+                  type: 'purple'
+                },
+                {
+                  name: 'Cloud Hosting',
+                  icon: Cloud,
+                  features: [
+                    'Auto-Scaling Resources',
+                    'Load Balancing',
+                    'Dedicated Resources',
+                    'Enhanced Security',
+                    'High Availability'
+                  ],
+                  type: 'purple'
+                },
+                {
+                  name: 'Cloud Hosting',
+                  icon: Cloud,
+                  features: [
+                    'Auto-Scaling Resources',
+                    'Load Balancing',
+                    'Dedicated Resources',
+                    'Enhanced Security',
+                    'High Availability'
+                  ],
+                  type: 'purple'
                 },
                 {
                   name: 'Cloud Hosting',
@@ -651,6 +689,7 @@ const Index = () => {
       </section>
       
       {/* Pricing Section */}
+      {/* 
       <section id="pricing" className="py-20 relative">
         <div className="container px-4 mx-auto">
           <motion.div 
@@ -713,6 +752,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+      */}
+      
       
       {/* 3D Brochures and Reels Section */}
       <section className="py-20 relative overflow-hidden">
